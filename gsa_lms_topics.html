@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSA LMS Topics</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .lms-wrap {
+      background: #ffffff;
+      padding: 2rem 1.5rem 2.5rem;
+    }
+
+    .lms-header {
+      margin-bottom: 2rem;
+    }
+
+    .lms-eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #82A3B0;
+      margin-bottom: 0.4rem;
+    }
+
+    .lms-title {
+      font-size: 22px;
+      font-weight: 500;
+      color: #1a1a1a;
+      line-height: 1.2;
+    }
+
+    .lms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+    }
+
+    .topic-card {
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      cursor: default;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 110px;
+    }
+
+    .topic-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    .card-1 { background: #FF621A; }
+    .card-2 { background: #D4BAEE; }
+    .card-3 { background: #F8E026; }
+    .card-4 { background: #64A095; }
+    .card-5 { background: #B1972F; }
+    .card-6 { background: #82A3B0; }
+    .card-7 { background: #EBAB73; }
+
+    .topic-name {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.25;
+      color: #1a1a1a;
+    }
+
+    .lms-footer {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 0.5px solid #e8e5e0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .module-count {
+      font-size: 13px;
+      color: #999;
+    }
+
+    .progress-dots {
+      display: flex;
+      gap: 5px;
+      margin-left: auto;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="lms-wrap">
+    <div class="lms-header">
+      <p class="lms-eyebrow">Course modules</p>
+      <h1 class="lms-title">Disability Inclusion Foundations</h1>
+    </div>
+
+    <div class="lms-grid">
+      <div class="topic-card card-1"><p class="topic-name">The Context of Disability</p></div>
+      <div class="topic-card card-2"><p class="topic-name">The Models of Disability</p></div>
+      <div class="topic-card card-3"><p class="topic-name">Disability Types</p></div>
+      <div class="topic-card card-4"><p class="topic-name">Inclusion and Accessibility</p></div>
+      <div class="topic-card card-5"><p class="topic-name">Universal Design</p></div>
+      <div class="topic-card card-6"><p class="topic-name">Inclusive Language and Communication</p></div>
+      <div class="topic-card card-7"><p class="topic-name">Inclusive Teams</p></div>
+    </div>
+
+    <div class="lms-footer">
+      <span class="module-count">7 modules</span>
+      <div class="progress-dots">
+        <div class="dot" style="background:#FF621A;"></div>
+        <div class="dot" style="background:#D4BAEE;"></div>
+        <div class="dot" style="background:#F8E026;"></div>
+        <div class="dot" style="background:#64A095;"></div>
+        <div class="dot" style="background:#B1972F;"></div>
+        <div class="dot" style="background:#82A3B0;"></div>
+        <div class="dot" style="background:#EBAB73;"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
